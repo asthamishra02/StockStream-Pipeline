@@ -1,2 +1,26 @@
-# StockStream-Pipeline
-A Dockerized data pipeline that fetches stock market data from APIs, processes JSON responses, and stores results in PostgreSQL. Orchestrated with Airflow/Dagster, it ensures automation, error handling, security via environment variables, and scalable execution with Docker Compose.
+# Stock Pipeline
+
+This project implements a Dockerized stock data pipeline using **Apache Airflow**. It automates fetching stock data, storing it in a database, and provides a web-based interface for scheduling, monitoring, and managing workflows.
+
+---
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- **Docker Desktop**  
+- **Docker Compose**  
+- **PowerShell** (Windows) or **Terminal** (Linux/macOS)  
+
+Ensure Docker Desktop is running, as all containers depend on it.
+
+---
+
+## Setup and Installation
+
+### 1. Build Docker Images
+
+The stock fetcher service requires building a custom Docker image:
+
+```powershell
+docker-compose build stock_fetcher
