@@ -1,0 +1,6 @@
+[2025-08-23T16:44:09.415+0000] {executor_loader.py:117} INFO - Loaded executor: SequentialExecutor
+[2025-08-23T16:44:09.416+0000] {logging_mixin.py:151} INFO - Sending to executor.
+[2025-08-23T16:44:09.417+0000] {base_executor.py:144} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'stock_pipeline', 'fetch_and_store_stock_data', 'manual__2025-08-23T16:41:47+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/stock_dag_new.py']
+[2025-08-23T16:44:09.417+0000] {sequential_executor.py:74} INFO - Executing command: ['airflow', 'tasks', 'run', 'stock_pipeline', 'fetch_and_store_stock_data', 'manual__2025-08-23T16:41:47+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/stock_dag_new.py']
+[2025-08-23T16:44:10.664+0000] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: stock_pipeline.fetch_and_store_stock_data manual__2025-08-23T16:41:47+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2025-08-23T16:44:10.664405+00:00 and task will be retried at 2025-08-23T16:46:50.372485+00:00.
+[2025-08-23T16:44:10.666+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run
